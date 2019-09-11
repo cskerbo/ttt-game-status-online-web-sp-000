@@ -33,7 +33,7 @@ end
 
 def full?(board)
   board.all? do |filled|
-    if filled == " " || filled == nill
+    if filled == " " || filled == nil
       return false
     elsif filled == "X" || filled == "O"
       return true
