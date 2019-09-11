@@ -33,9 +33,9 @@ end
 
 def full?(board)
   board.all? do |filled|
-    if filled.any? == " " || filled == nil
+    filled.any? == " " || filled.any? == nil
       return false
-    elsif filled.all? == "X" || filled == "O"
+    elsif filled.all? == "X" || filled.all? == "O"
       return true
     end
   end
