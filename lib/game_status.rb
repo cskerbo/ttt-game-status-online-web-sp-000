@@ -33,9 +33,10 @@ end
 
 def full?(board)
   board.all? do |check|
-    check.any? == " " || check.any? == nil do |empty|
+    if check.any? == " " || check.any? == nil do |empty|
       return false
-    check.all? == "X" || check.all? == "O" do |filled|
+    elsif check.all? == "X" || check.all? == "O" do |filled|
       return true
+    end
   end
 end
