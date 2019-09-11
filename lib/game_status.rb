@@ -34,5 +34,6 @@ end
 def full?(board)
   board.all? do |filled|
     filled = "X" || filled == "O"
+    true
   end
 end
