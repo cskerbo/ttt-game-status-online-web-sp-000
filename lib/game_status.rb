@@ -37,6 +37,5 @@ def full?(board)
       return false
     filled.all? == "X" || filled.all? == "O"
       return true
-    end
   end
 end
