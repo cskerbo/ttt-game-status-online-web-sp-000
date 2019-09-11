@@ -32,10 +32,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |filled|
-    filled.any? == " " || filled.any? == nil
+  board.all? do |check|
+    check.any? == " " || check.any? == nil do |empty|
       return false
-    filled.all? == "X" || filled.all? == "O"
+    check.all? == "X" || check.all? == "O" do |filled|
       return true
   end
 end
